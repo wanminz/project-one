@@ -11,9 +11,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /*
   base font-size: 18px
   base line-height: 22px
-  1.618/Phi is our modular scale:
+  1.618/Phi is the modular scale:
   https://www.modularscale.com/?18&px&1.618
 */
+
+html{
+  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.222222222222222em; /* 22 / 18 = 1.222222222222222 */
+  padding: 1.222222222222222em; /* 22 / 18 = 1.222222222222222 */
+}
 
 /* Diagnostic CSS */
 /**
