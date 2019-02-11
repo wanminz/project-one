@@ -17,6 +17,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* General Styling */
 html{
+  background: #FFF3DD;
+  color: #131312;
   font-size: 1.125em; /* 18px / 16px = 1.125em */
   line-height: 1.222222222222222em; /* 22px / 18px = 1.222222222222222em */
   padding: 1.222222222222222em; /* 22px / 18px = 1.222222222222222em */
@@ -24,8 +26,20 @@ html{
 
 /* Webpage Heading */
 h1{
+  background: #FFDBBF;
+  color: #C92828;
   font-size: 1.618em; /* 29.124px / 18px = 1.618em */
   line-height: 1.510781486059607em; /* 44px / 29.124px = 1.510781486059607em */
+}
+
+p{
+  color: #C48564;
+}
+
+/* Form */
+input,
+label{
+  display: block;
 }
 
 /* Diagnostic CSS */
