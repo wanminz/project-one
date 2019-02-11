@@ -16,14 +16,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html{
-  font-size: 1.125em; /* 18 / 16 = 1.125 */
-  line-height: 1.222222222222222em; /* 22 / 18 = 1.222222222222222 */
-  padding: 1.222222222222222em; /* 22 / 18 = 1.222222222222222 */
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  line-height: 1.222222222222222em; /* 22px / 18px = 1.222222222222222em */
+  padding: 1.222222222222222em; /* 22px / 18px = 1.222222222222222em */
 }
 
 h1{
-  font-size: 1.618em; /* 29.124 / 18 = 1.618 */
-  line-height: 1.133086114544705em; /* 33 / 29.124 = 1.133086114544705 */
+  font-size: 1.618em; /* 29.124px / 18px = 1.618em */
+  line-height: 1.510781486059607em; /* 44px / 29.124px = 1.510781486059607em */
 }
 
 /* Diagnostic CSS */
