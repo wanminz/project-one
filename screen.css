@@ -21,6 +21,11 @@ html{
   padding: 1.222222222222222em; /* 22 / 18 = 1.222222222222222 */
 }
 
+h1{
+  font-size: 1.618em; /* 29.124 / 18 = 1.618 */
+  line-height: 1.133086114544705em; /* 33 / 29.124 = 1.133086114544705 */
+}
+
 /* Diagnostic CSS */
 /**
 * A quick baseline grid overlay using css+svg.
