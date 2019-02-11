@@ -17,7 +17,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* General Styling */
 html{
-  background: #FFF3DD;
+  background: #FEFEFF;
   color: #131312;
   font-size: 1.125em; /* 18px / 16px = 1.125em */
   line-height: 1.222222222222222em; /* 22px / 18px = 1.222222222222222em */
@@ -40,6 +40,18 @@ p{
 input,
 label{
   display: block;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"]{
+  background-color: #FFF3DD;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus{
+  background-color: #FFDBBF;
 }
 
 /* Diagnostic CSS */
