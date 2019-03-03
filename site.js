@@ -20,13 +20,9 @@ console.log('Starting');
     var submitbtn = document.querySelector('#signup');
 
     // Using focus method on user input boxes
-    document.getElementById('name_input').focus();
-    document.getElementById('email_input').focus();
-    document.getElementById('num_input').focus();
-
-    console.log('helo');
-
-    document.getElementById('submitbtn').disabled = true;
+    name_input.addEventListener('focus');
+    email_input.addEventListener('focus');
+    num_input.addEventListener('focus');
 
 
   // End of DOMContentLoaded
