@@ -10,12 +10,7 @@ document.addEventListener('DOMContentLoaded',function(){
   console.log('LOADED DOM');
 });
 
-var fname_input = document.querySelector('#fname');
-fname_input.addEventListener('focus', function(){
-  console.log('Focused');
-});
-
-var lname_input = document.querySelector('#lname');
+var name_input = document.querySelector('#lname');
 lname_input.addEventListener('focus', function(){
   console.log('Focused');
 });
