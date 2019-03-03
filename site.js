@@ -28,6 +28,9 @@
       console.log('Focusing on phone number');
     });
 
+    // Disabling submit button without a full 10-digit phone number
+    submitbtn.setAttribute('disabled','disabled');
+
 
   // End of DOMContentLoaded
   });
