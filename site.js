@@ -20,9 +20,15 @@ console.log('Starting');
     var submitbtn = document.querySelector('#signup');
 
     // Using focus method on user input boxes
-    name_input.addEventListener('focus');
-    email_input.addEventListener('focus');
-    num_input.addEventListener('focus');
+    name_input.addEventListener('focus', function(){
+      console.log('Focusing on name');
+    });
+    email_input.addEventListener('focus', function(){
+      console.log('Focusing on email');
+    });
+    num_input.addEventListener('focus', function(){
+      console.log('Focusing on phone number');
+    });
 
 
   // End of DOMContentLoaded
