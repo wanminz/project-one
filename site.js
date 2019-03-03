@@ -2,11 +2,9 @@
 // it, will not run any JavaScript
 (function(){
   if (!('querySelector' in document && 'addEventListener' in document)){
+    console.log('Old browser');
     return;
   }
-});
-
-console.log('Running!');
 
 var name_input = document.querySelector('#name');
 name_input.addEventListener('focus', function(){
@@ -22,3 +20,5 @@ var phone_input = document.querySelector('#phone');
 phone_input.addEventListener('focus', function(){
   console.log('Focused on Phone');
 });
+
+}());
