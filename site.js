@@ -1,7 +1,6 @@
 // Using global form
 "use strict";
 
-console.log('Starting');
 // Function to check if the browser is able to run javascript
 (function(){
   // If javascript can't be ran, exits out of function
@@ -10,7 +9,6 @@ console.log('Starting');
     return;
   }
 
-  console.log('hello');
   document.addEventListener('DOMContentLoaded', function(){
     // Link DOM elements
     var signup_form = document.querySelector('#dogform');
