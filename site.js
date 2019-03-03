@@ -6,9 +6,7 @@
   }
 }
 
-document.addEventListener('DOMContentLoaded',function(){
-  console.log('LOADED DOM');
-});
+console.log('running');
 
 var name_input = document.querySelector('#lname');
 lname_input.addEventListener('focus', function(){
