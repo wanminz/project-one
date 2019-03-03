@@ -29,10 +29,11 @@ console.log('Starting');
     document.getElementById('submitbtn').disabled = true;
 
 
+  // End of DOMContentLoaded
   });
 
 
 
 
-
-});
+// End of IIFE
+}());
