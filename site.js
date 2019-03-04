@@ -14,10 +14,55 @@
   function eq(value, condition){
     return value === condition;
   }
-  
+
+  // Function to clean up phone number inputs
+  function cleannum(value){
+    return value.replace(/\D/g,'');
+  }
+
+  // Function to clean up whitespace
+  function cleanws(value){
+    return value.replace(/\s/g, '');
+  }
+
+  // Function to remove the +1 area code in phone numbers
+  function rmone(value){
+    return value.replace(/^1/,'');
+  }
+
+  // Function to validate the user's inputs
+  function validate(value, check, condition){
+    if(eq(typeof(check.test), 'function')){
+      // Checking a regular expression
+      return check.test(value);
+    } else if (eq(typeof(check), 'function')){
+      // Checking a comparison function
+      return check(value, condition);
+    } else {
+      return false;
+    }
+  }
+
+  // Function to check phone number
+  function checkphone(value){
+    // Removing the one from the phone number if exists and any non-digits
+    var phone_input = rmone(cleannum(value));
+    // Ensuring that the phone number entered is exactly 10 digits
+    return validate(phone_input.length, eq, 10);
+  }
+
+  // Function to check email
+  function checkemail(value){
+    var email_input = cleanws(value);
+    // Ensures that there is an @ in between characters
+    return validate(email_input, /^[^@\s]+@[^@\s]+$/g);
+  }
+
+  // Will run everything when the DOM has finished loading
   document.addEventListener('DOMContentLoaded', function(){
     // Link DOM elements
     var signup_form = document.querySelector('#dogform');
+    var name_input = document.querySelector('#name');
     var contact_info = document.querySelector('#contact');
     var submitbtn = document.querySelector('#signup');
 
