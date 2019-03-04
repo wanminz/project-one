@@ -93,7 +93,7 @@
         err = document.querySelector('#err');
         if(usercon.length > 10 && err.innerText.length === 0){
           // Text to tell the user to enter correct inputs
-          err.innerText = 'Please enter a ten-digit phone number or a valid email.'
+          err.innerText = 'Please enter a ten-digit phone number or a valid email.';
         }
         // Disables the submit button again because invalid inputs
         submitbtn.setAttribute('disabled', 'disabled');
