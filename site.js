@@ -12,9 +12,7 @@
   document.addEventListener('DOMContentLoaded', function(){
     // Link DOM elements
     var signup_form = document.querySelector('#dogform');
-    var name_input = document.querySelector('#name');
-    var email_input = document.querySelector('#email');
-    var num_input = document.querySelector('#phone');
+    var contact_info = document.querySelector('#contact');
     var submitbtn = document.querySelector('#signup');
 
     // Using focus method on user input boxes
