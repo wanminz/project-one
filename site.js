@@ -64,6 +64,9 @@
     var signup_form = document.querySelector('#dogform');
     var name_input = document.querySelector('#name');
     var contact_info = document.querySelector('#contact');
+    // Lets user know their input doesn't satisfy requirements
+    var help = document.querySelector('#contact-info .hint');
+    help.innerHTML += ' <b id="err"></b>';
     var submitbtn = document.querySelector('#signup');
 
     // Using focus method on user input boxes
