@@ -69,7 +69,7 @@
     help.innerHTML += ' <b id="err"></b>';
     var submitbtn = document.querySelector('#signup');
 
-    // Using focus method on user input boxes
+    // Putting focus on user input textboxes
     name_input.addEventListener('focus', function(){
       console.log('Focusing on name');
     });
@@ -78,7 +78,26 @@
     });
 
     // Disabling submit button without a full 10-digit phone number
-    submitbtn.setAttribute('disabled','disabled');
+    submitbtn.setAttribute('disabled', 'disabled');
+
+    // Listening for a keyup in the entire form
+    signup_form.addEventListener('keyup', function(){
+      var usercon = contact_info.value;
+      // If statement to check if the user has input a phone number OR email
+      if(checkphone(usercon) || checkemail(usercon)){
+        // Enabling the submit button if there is a phone or email input and
+        // it is correct
+        submitbtn.removeAttribute('disabled');
+      } else{
+        var err = document.querySelector('#err');
+        if(usercon.length > 10 && err.innerText.length === 0){
+          // Text to tell the user to enter correct inputs
+          err.innerText = 'Please enter a ten-digit phone number or a valid email.'
+        }
+        // Disables the submit button again because invalid inputs
+        submitbtn.setAttribute('disabled', 'disabled');
+      }
+    });
 
 
   // End of DOMContentLoaded
