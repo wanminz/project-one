@@ -61,13 +61,13 @@
   // Will run everything when the DOM has finished loading
   document.addEventListener('DOMContentLoaded', function(){
     // Link DOM elements
+    var submitbtn = document.querySelector('#signup');
     var signup_form = document.querySelector('#dogform');
     var name_input = document.querySelector('#name');
     var contact_info = document.querySelector('#contact');
     // Lets user know their input doesn't satisfy requirements
     var help = document.querySelector('#contact-info .hint');
     help.innerHTML += ' <b id="err"></b>';
-    var submitbtn = document.querySelector('#signup');
 
     // Putting focus on user input textboxes
     name_input.addEventListener('focus', function(){
@@ -83,13 +83,14 @@
     // Listening for a keyup in the entire form
     signup_form.addEventListener('keyup', function(){
       var usercon = contact_info.value;
+      var err;
       // If statement to check if the user has input a phone number OR email
       if(checkphone(usercon) || checkemail(usercon)){
         // Enabling the submit button if there is a phone or email input and
         // it is correct
         submitbtn.removeAttribute('disabled');
       } else{
-        var err = document.querySelector('#err');
+        err = document.querySelector('#err');
         if(usercon.length > 10 && err.innerText.length === 0){
           // Text to tell the user to enter correct inputs
           err.innerText = 'Please enter a ten-digit phone number or a valid email.'
