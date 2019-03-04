@@ -17,7 +17,7 @@
 
   // Function to clean up phone number inputs
   function cleannum(value){
-    return value.replace(/\D/g,'');
+    return value.replace(/\D/g, '');
   }
 
   // Function to clean up whitespace
@@ -27,7 +27,7 @@
 
   // Function to remove the +1 area code in phone numbers
   function rmone(value){
-    return value.replace(/^1/,'');
+    return value.replace(/^1/, '');
   }
 
   // Function to validate the user's inputs
