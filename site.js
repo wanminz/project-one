@@ -9,6 +9,7 @@
     return;
   }
 
+  // Functions from Karl Stolley @ https://github.com/itmd-362-2019/demos
   // Comparison function
   function eq(value, condition){
     return value === condition;
