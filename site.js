@@ -99,13 +99,7 @@
         submitbtn.setAttribute('disabled', 'disabled');
       }
     });
-
-
   // End of DOMContentLoaded
   });
-
-
-
-
 // End of IIFE
 }());

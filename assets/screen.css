@@ -42,15 +42,11 @@ label {
   display: block;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
+input[type="text"] {
   background-color: #FFF3DD;
 }
 
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="email"]:focus {
+input[type="text"]:focus {
   background-color: #FFDBBF;
 }
 
