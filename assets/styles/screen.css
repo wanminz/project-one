@@ -34,27 +34,24 @@ main{
   margin-top: 5em;
 }
 
-
-
-
 /* Webpage Heading */
 h1 {
   background: #fff;
   color: #B87032;
-  font-size: 1.82em;
   font-family: Limelight;
+  font-size: 1.82em;
   line-height: 1.510781486059607em; /* 44px / 29.124px = 1.510781486059607em */
-  text-align: center;
   margin-bottom: 0.7em;
+  text-align: center;
 }
 
 /* Form */
 input,
 label {
-  display: block;
   box-sizing: border-box;
-  padding-top: 1em;
+  display: block;
   outline: 0;
+  padding-top: 1em;
 }
 
 p{
@@ -62,15 +59,15 @@ p{
 }
 
 label{
+  text-align: none;
   font-size: 1.3em;
   font-weight: bold;
-  text-align: none;
 }
 /* Making things bigger */
 input{
-  padding: 0.5em;
   font-size: inherit;
   line-height: inherit;
+  padding: 0.5em;
   width: 100%;
 }
 
@@ -85,17 +82,17 @@ input[type="text"]:focus {
 
 
 .hint{
-  text-align: left;
   font-size: 0.8em;
   font-style: italic;
+  text-align: left;
 }
 
 #signup{
-  margin-top: 1.5em;
-  font-weight: bolder;
-  font-size: 1.5em;
-  color: #fff;
   background-color: #27902E;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin-top: 1.5em;
 }
 
 /* Diagnostic CSS */
