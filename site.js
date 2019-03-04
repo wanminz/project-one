@@ -19,11 +19,8 @@
     name_input.addEventListener('focus', function(){
       console.log('Focusing on name');
     });
-    email_input.addEventListener('focus', function(){
-      console.log('Focusing on email');
-    });
-    num_input.addEventListener('focus', function(){
-      console.log('Focusing on phone number');
+    contact_info.addEventListener('focus', function(){
+      console.log('Focusing on email/phone number');
     });
 
     // Disabling submit button without a full 10-digit phone number
