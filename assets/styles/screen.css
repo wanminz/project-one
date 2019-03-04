@@ -28,7 +28,7 @@ html {
   padding: 1.222222222222222em; /* 22px / 18px = 1.222222222222222em */
 }
 
-main{
+main {
   background-color: #fff;
   padding: 2em;
   margin-top: 5em;
@@ -54,17 +54,18 @@ label {
   padding-top: 1em;
 }
 
-p{
+p {
   text-align: center;
 }
 
-label{
+label {
   text-align: none;
   font-size: 1.3em;
   font-weight: bold;
 }
+
 /* Making things bigger */
-input{
+input {
   font-size: inherit;
   line-height: inherit;
   padding: 0.5em;
@@ -81,13 +82,13 @@ input[type="text"]:focus {
 }
 
 
-.hint{
+.hint {
   font-size: 0.8em;
   font-style: italic;
   text-align: left;
 }
 
-#signup{
+#signup {
   background-color: #27902E;
   color: #fff;
   font-size: 1.5em;
