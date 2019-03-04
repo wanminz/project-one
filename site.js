@@ -9,6 +9,11 @@
     return;
   }
 
+  // Comparison function
+  function eq(value, condition){
+    return value === condition;
+  }
+  
   document.addEventListener('DOMContentLoaded', function(){
     // Link DOM elements
     var signup_form = document.querySelector('#dogform');
