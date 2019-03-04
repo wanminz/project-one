@@ -40,6 +40,7 @@ p {
 input,
 label {
   display: block;
+  box-sizing: border-box;
 }
 
 /* Making things bigger */
@@ -47,6 +48,7 @@ input{
   padding: 1.222222222222222em; /* 22px / 18px = 1.222222222222222em */
   font-size: inherit;
   line-height: inherit;
+  width: 100%;
 }
 /* Giving an unfocused and focused input box different colors to differentiate */
 input[type="text"] {
